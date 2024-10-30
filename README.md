@@ -1,3 +1,49 @@
-# django-rest-app-for-showing-university-foods
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django REST App for Showing University Foods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
 
-### this app get all Foods of this week and show the meals of today
+<h1>Django REST App for Showing University Foods</h1>
+
+<h2>Overview</h2>
+<p>This program receives all the meals of the week via a JSON and returns the meals for today or tomorrow based on the request time.</p>
+
+<h2>Available Endpoints</h2>
+<ul>
+    <li><strong><code>all-foods/</code></strong>: Displays all of the foods available for the current week.</li>
+    <li><strong><code>dining/</code></strong>: 
+        <ul>
+            <li>If lunch time is over, this endpoint shows today's dinner and tomorrow's lunch.</li>
+            <li>Otherwise, it shows both today's lunch and dinner.</li>
+        </ul>
+    </li>
+    <li><strong><code>insert-foods/</code></strong>: Allows users to create new food entries.</li>
+    <li><strong><code>just-lunch/</code></strong>: Displays only the lunches available for native students.</li>
+</ul>
+
+</body>
+</html>

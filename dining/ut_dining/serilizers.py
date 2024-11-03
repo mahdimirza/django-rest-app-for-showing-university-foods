@@ -38,7 +38,7 @@ class FoodItemSerilizer(serializers.ModelSerializer):
 
     def get_title(self, obj):
         jalali_date = jdatetime.datetime.now().date()
-        return f"( { obj.day } ) {obj.type}"
+        return f"{obj.type} ( { obj.day } )"
     
     def to_representation(self, instance):
         return super().to_representation(instance)
